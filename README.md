@@ -1,6 +1,6 @@
 
 <p align="center">
-    <img src="./.github/assets/main.png" width=100  >
+    <img src="./.github/assets/avatar.png" width=100  >
 </p>
 
 
