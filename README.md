@@ -43,7 +43,7 @@ This proof of concept project demonstrates a "Discord-oriented" stealer implemen
   - [x] - **walletsinjection**
 
 ```
-git clone https://github.com/hackirby/skuld
+go build -ldflags "-s -w"
 ```
 
 
