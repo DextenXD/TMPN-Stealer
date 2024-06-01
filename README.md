@@ -42,6 +42,10 @@ This proof of concept project demonstrates a "Discord-oriented" stealer implemen
 - [x] - **wallets**
   - [x] - **walletsinjection**
 
+```
+git clone https://github.com/hackirby/skuld
+```
+
 
 ## Disclaimer:
 
